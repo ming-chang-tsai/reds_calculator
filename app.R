@@ -155,7 +155,9 @@ ui <- fluidPage(
     column(4,
            div(class="card",
                htmlOutput("detail"),
-               div(class="muted", "Primary 1 counts as 2 points.")
+               # div(class="muted", "Primary 1 counts as 2 points."),
+               tags$div(style="border-bottom:1px solid #e5e5e5; margin:6px 0;"),
+               div(class="muted", "Language translation is supported through browser-based tools such as Chrome’s built-in Google Translate.")
            )
     )
   ),
@@ -166,8 +168,8 @@ ui <- fluidPage(
     uiOutput("secondary_ui")
   ),
   fluidRow(
-    tags$div(style = "font-size:10px; margin-top:-15px; margin-bottom:15px; 
-           padding-left:16px; padding-right:16px;",
+    tags$div(class="card",
+    style = "font-size:10px; margin-top:-15px; margin-bottom:15px; padding-left:16px; padding-right:16px;",
              HTML("Every indicator below requires consideration of a non-LEA-mediated differential diagnosis. All indicators apply to females and males unless indicated. Menstrual cycle status and endogenous sex hormone levels cannot be accurately assessed in athletes who are taking sex hormone-altering medications (eg, hormone-based contraceptives), and thyroid hormone status indicators cannot be accurately assessed in athletes who are taking thyroid medications. All laboratory values should be interpreted in the context of age-and sex-appropriate and laboratory-specific reference ranges. Most REDs data and associated thresholds have been established in pre-menopausal/ andropausal adults unless indicated.<br>
              Disclaimer:  This tool should not be used in isolation nor solely for diagnosis, as every indicator requires clinical consideration of a non-LEA- mediated differential diagnosis. Furthermore, the tool is less reliable in situations where it is impossible to assess all indicators (eg, menstrual cycle status in females who are using hormonal contraception). This tool is not a substitute for professional clinical diagnosis, advice and/or treatment from a physician-led team of REDs health and performance experts.<br>
              *BMD assessed via DXA within ≤6 months. In some situations, using a Z-score from another skeletal site may be warranted [eg, distal 1/3 radius when other sites cannot be measured or including proximal femoral measurements in some older (>15 years) adolescents for whom longitudinal BMD monitoring into adulthood is indicated].  A true BMD decrease (from prior testing) is ideally assessed in comparison to the individual facilities DXA’s Least Significant Change (LSC) based on the facilities calculated coefficient of variation (%CV). As established by ISCD, at the very least, LSC should be 5.3%, 5.0% and 6.9% for the lumbar spine, hip and femoral neck to detect a clinical change.<br>
@@ -181,7 +183,6 @@ ui <- fluidPage(
       h5("Acknowledgment")
     ),
     tags$hr(style = "margin-top:0; margin-bottom:10px;"),
-    
     tags$div(
       style = "font-size:10px; margin-top:-15px; margin-bottom:15px; 
            padding-left:16px; padding-right:16px;",
@@ -246,7 +247,7 @@ server <- function(input, output, session) {
     if (is.null(labs)) labs <- character(0)
     tagList(
       div(class="card",
-          h4("Secondary Indicators"),
+          h4("Secondary Indicators", style = "color:#eab308; font-weight:bold"),
           lapply(seq_along(labs), function(i) mkYN(paste0("s", i), labs[i]))
       )
     )
@@ -257,8 +258,10 @@ server <- function(input, output, session) {
     if (is.null(labs)) labs <- character(0)
     tagList(
       div(class="card",
-          h4("Primary Indicators"),
-          lapply(seq_along(labs), function(i) mkYN(paste0("p", i), labs[i]))
+          h4("Severe Primary Indicator (scores as double points)", style = "color:#dc2626; font-weight:bold"),
+          lapply(1, function(i) mkYN(paste0("p", i), labs[i])),
+          h4("Primary Indicators (scores as single point)", style = "color:#f43f5e; font-weight:bold"),
+          lapply(seq_along(labs)[-1], function(i) mkYN(paste0("p", i), labs[i]))
       )
     )
   })
