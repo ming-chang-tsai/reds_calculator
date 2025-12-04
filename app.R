@@ -166,7 +166,8 @@ ui <- fluidPage(
     uiOutput("secondary_ui")
   ),
   fluidRow(
-    tags$div(style="font-size:10px; margin-top:-15px; margin-bottom:15px;",
+    tags$div(style = "font-size:10px; margin-top:-15px; margin-bottom:15px; 
+           padding-left:16px; padding-right:16px;",
              HTML("Every indicator below requires consideration of a non-LEA-mediated differential diagnosis. All indicators apply to females and males unless indicated. Menstrual cycle status and endogenous sex hormone levels cannot be accurately assessed in athletes who are taking sex hormone-altering medications (eg, hormone-based contraceptives), and thyroid hormone status indicators cannot be accurately assessed in athletes who are taking thyroid medications. All laboratory values should be interpreted in the context of age-and sex-appropriate and laboratory-specific reference ranges. Most REDs data and associated thresholds have been established in pre-menopausal/ andropausal adults unless indicated.<br>
              Disclaimer:  This tool should not be used in isolation nor solely for diagnosis, as every indicator requires clinical consideration of a non-LEA- mediated differential diagnosis. Furthermore, the tool is less reliable in situations where it is impossible to assess all indicators (eg, menstrual cycle status in females who are using hormonal contraception). This tool is not a substitute for professional clinical diagnosis, advice and/or treatment from a physician-led team of REDs health and performance experts.<br>
              *BMD assessed via DXA within ≤6 months. In some situations, using a Z-score from another skeletal site may be warranted [eg, distal 1/3 radius when other sites cannot be measured or including proximal femoral measurements in some older (>15 years) adolescents for whom longitudinal BMD monitoring into adulthood is indicated].  A true BMD decrease (from prior testing) is ideally assessed in comparison to the individual facilities DXA’s Least Significant Change (LSC) based on the facilities calculated coefficient of variation (%CV). As established by ISCD, at the very least, LSC should be 5.3%, 5.0% and 6.9% for the lumbar spine, hip and femoral neck to detect a clinical change.<br>
@@ -175,16 +176,23 @@ ui <- fluidPage(
     )
   ),
   fluidRow(
-    h5("Acknowledgment"),
-    tags$div(style="font-size:10px; margin-top:-15px; margin-bottom:15px;",
-             HTML("This calculator developed by:<br>
-             Canadian Sport Institute Pacific (CSI Pacific)<br>
-             Lead, Biomechanics & Performance Analysis; Senior Specialist, Data Analytics<br>
-             Dr. Ming-Chang Tsai (mtsai@csipacific.ca)<br><br>
-             Dr. Ida Heikura, CSI Pacific post-doctorate fellow (IHeikura@csipacific.ca)<br><br>
-             Dr. Trent Stellingwerff, Sr. Advisor R&D (tstellingwerff@csipacific.ca)<br><br>
-            and reviewed by all co-authors.")
-    )
+    tags$div(
+      style = "padding-left:16px;",
+      h5("Acknowledgment")
+    ),
+    tags$hr(style = "margin-top:0; margin-bottom:10px;"),
+    
+    tags$div(
+      style = "font-size:10px; margin-top:-15px; margin-bottom:15px; 
+           padding-left:16px; padding-right:16px;",
+      HTML("This calculator developed by:<br>
+       Canadian Sport Institute Pacific (CSI Pacific)<br>
+       Lead, Biomechanics & Performance Analysis; Senior Specialist, Data Analytics<br>
+       Dr. Ming-Chang Tsai (mtsai@csipacific.ca)<br><br>
+       Dr. Ida Heikura, CSI Pacific post-doctorate fellow (IHeikura@csipacific.ca)<br><br>
+       Dr. Trent Stellingwerff, Sr. Advisor R&D (tstellingwerff@csipacific.ca)<br><br>
+       and reviewed by all co-authors.")
+    )  
   )
 )
 
