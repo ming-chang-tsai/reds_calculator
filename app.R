@@ -93,33 +93,32 @@ row.names(mapping) <- NULL
 # =====================
 
 primary_labels <- list (
-  Female = c("Primary amenorrhea (Females: primary amenorrhea is indicated when there has been a failure to menstruate by age 15 in the presence of normal secondary sexual development (two SD above the mean of 13 years), or within 5 years after breast development if that occurs before age 10; or prolonged secondary amenorrhea (absence of 12 or more consecutive menstrual cycles) due to FHA", 
-             "Secondary amenorrhea (Females: absence of 3–11 consecutive menstrual cycles) caused by FHA", 
-             "Subclinically or clinically low total or free T3 (within or below the lowest 25% (quartile) of the reference range)", 
-             "History of ≥1 high-risk (femoral neck, sacrum, pelvis) or ≥2 low-risk BSI (all other BSI locations) within the previous 2 years or absence of ≥6 months from training due to BSI in the previous 2 years",
-             "Pre-menopausal females and males <50 years old: BMD Z-score* <-1 at the lumbar spine, total hip, or femoral neck or decrease in BMD Z-score from prior testing
-Children/adolescents: BMD Z-score* <−1 at the lumbar spine or TBLH or decrease in BMD Z-score from prior testing (can occur from bone loss or inadequate bone accrual).", 
-             "A negative deviation of a paediatric or adolescent athlete’s previous growth trajectory (height and/or weight)", 
-             "An elevated score for the EDE-Q global (>2.30 in females; >1.68 in males) and/or clinically diagnosed DSM-5- TR- defined Eating Disorder (only 1 primary indicator for either or both outcomes)"),
-  Male = c("Clinically low free or total testosterone (Males: below the reference range)", 
-           "Subclinically low total or free testosterone (Males: within the lowest 25% (quartile) of the reference range)", 
-           "Subclinically or clinically low total or free T3 (within or below the lowest 25% (quartile) of the reference range)", 
-           "History of ≥1 high-risk (femoral neck, sacrum, pelvis) or ≥2 low-risk BSI (all other BSI locations) within the previous 2 years or absence of ≥6 months from training due to BSI in the previous 2 years",
-           "Pre-menopausal females and males <50 years old: BMD Z-score* <-1 at the lumbar spine, total hip, or femoral neck or decrease in BMD Z-score from prior testing
-Children/adolescents: BMD Z-score* <−1 at the lumbar spine or TBLH or decrease in BMD Z-score from prior testing (can occur from bone loss or inadequate bone accrual).", 
-           "A negative deviation of a paediatric or adolescent athlete’s previous growth trajectory (height and/or weight)", 
-           "An elevated score for the EDE-Q global (>2.30 in females; >1.68 in males) and/or clinically diagnosed DSM-5- TR- defined Eating Disorder (only 1 primary indicator for either or both outcomes)")
+  Female = c("Does the patient/athlete meet the criteria for primary amenorrhea (failure to menstruate by age 15 in the presence of normal secondary sexual development (two SD above the mean of 13 years or within 5 years after breast development if that occurs before age 10) or prolonged secondary amenorrhea (absence of 12 or more consecutive menstrual cycles) due to FHA?", 
+             "Does the patient/athlete meet the criteria for secondary amenorrhea (absence of 3–11 consecutive menstrual cycles) caused by FHA?", 
+             "Does the patient/athlete have subclinically or clinically low total or free T3 (within or below the lowest 25% (quartile) of the reference range)?", 
+             "Does the patient/athlete have a history of ≥1 high-risk (femoral neck, sacrum, pelvis) or ≥2 low-risk BSI (all other BSI locations) within the previous 2 years or absence of ≥6 months from training due to BSI in the previous 2 years?",
+             "For pre-menopausal females <50 years old, does the patient/athlete have a BMD Z-score* <-1 at the lumbar spine, total hip, or femoral neck or decrease in BMD Z-score from prior testing? For
+children or adolescents, does the patient/athlete have a BMD Z-score* <−1 at the lumbar spine or TBLH or decrease in BMD Z-score from prior testing (can occur from bone loss or inadequate bone accrual)?", 
+             "Has the patient/athlete shown a negative deviation of a paediatric or adolescent athlete’s previous growth trajectory (height and/or weight)?", 
+             "Does the patient/athlete have an elevated score for the EDE-Q global (>2.30) and/or clinically diagnosed DSM-5- TR- defined Eating Disorder (only 1 primary indicator for either or both outcomes)?"),
+  Male = c("Does the patient/athlete have clinically low free or total testosterone (Males: below the reference range)?", 
+           "Does the patient/athlete have subclinically low total or free testosterone (Males: within the lowest 25% (quartile) of the reference range)?", 
+           "Does the patient/athlete have subclinically or clinically low total or free T3 (within or below the lowest 25% (quartile) of the reference range)?", 
+           "Does the patient/athlete have a history of ≥1 high-risk (femoral neck, sacrum, pelvis) or ≥2 low-risk BSI (all other BSI locations) within the previous 2 years or absence of ≥6 months from training due to BSI in the previous 2 years?",
+           "For pre-menopausal males <50 years old, does the patient/athlete have a BMD Z-score* <-1 at the lumbar spine, total hip, or femoral neck or decrease in BMD Z-score from prior testing? For children or adolescents, does the patient/athlete have a BMD Z-score* <−1 at the lumbar spine or TBLH or decrease in BMD Z-score from prior testing (can occur from bone loss or inadequate bone accrual)?", 
+           "Has the patient/athlete shown a negative deviation of a paediatric or adolescent athlete’s previous growth trajectory (height and/or weight)?", 
+           "Does the patient/athlete have an elevated score for the EDE-Q global (>1.68) and/or clinically diagnosed DSM-5- TR- defined Eating Disorder (only 1 primary indicator for either or both outcomes)?")
 )
 
 
 secondary_labels <- list(
-  Female = c("Elevated total or LDL cholesterol (above reference range)", 
-             "History of 1 low-risk BSI (see high vs low-risk definition above) within the previous 2 years and absence of <6 months from training due to BSI in the previous 2 years", 
-             "Clinically diagnosed depression and/or anxiety (only 1 secondary indicator for either or both outcomes)",
-             "Oligomenorrhea caused by FHA (>35 days between periods for a maximum of 8 periods/year)"),
-  Male   = c("Elevated total or LDL cholesterol (above reference range)", 
-             "History of 1 low-risk BSI (see high vs low-risk definition above) within the previous 2 years and absence of <6 months from training due to BSI in the previous 2 years", 
-             "Clinically diagnosed depression and/or anxiety (only 1 secondary indicator for either or both outcomes)")
+  Female = c("Does the patient/athlete have elevated total or LDL cholesterol (above reference range)?", 
+             "Does the patient/athlete have a history of 1 low-risk BSI (see high vs low-risk definition above) within the previous 2 years and absence of <6 months from training due to BSI in the previous 2 years?", 
+             "Does the patient/athlete have clinically diagnosed depression and/or anxiety (only 1 secondary indicator for either or both outcomes)?",
+             "Does the patient/athlete have oligomenorrhea caused by FHA (>35 days between periods for a maximum of 8 periods/year)?"),
+  Male   = c("Does the patient/athlete have elevated total or LDL cholesterol (above reference range)?", 
+             "Does the patient/athlete have a history of 1 low-risk BSI (see high vs low-risk definition above) within the previous 2 years and absence of <6 months from training due to BSI in the previous 2 years?", 
+             "Does the patient/athlete have clinically diagnosed depression and/or anxiety (only 1 secondary indicator for either or both outcomes)?")
 )
 
 yesno <- c("No"=0, "Yes"=1)
@@ -134,12 +133,14 @@ ui <- fluidPage(
     .green {background:#22c55e;} .yellow{background:#eab308;} .orange{background:#f97316;} .red{background:#ef4444;}
     .muted{color:#555;} .card{border:1px solid #e5e7eb; border-radius:12px; padding:16px; margin-bottom:12px;}
   '))),
-  titlePanel("IOC REDs CAT2 Severity/Risk Stratification Calculator"),
-  tags$div(style="font-size:10px; margin-top:-10px; margin-bottom:15px;",
-           HTML("Calculator based on: Stellingwerff, T., M. Mountjoy, W. T. McCluskey, K. E. Ackerman, E. Verhagen and I. A. Heikura (2023). \"Review of the scientific rationale, development and validation of the International Olympic Committee Relative Energy Deficiency in Sport Clinical Assessment Tool: V.2 (IOC REDs CAT2) — by a subgroup of the IOC consensus on REDs.\" <i>Br J Sports Med</i> 57(17): 1109–1118.<br>
-<a href='https://bjsm.bmj.com/content/57/17/1109' target='_blank'>https://bjsm.bmj.com/content/57/17/1109</a>")
+  fluidRow(
+    column(6, tags$img(src = "ioc.svg", height = "50px", style = "padding:10px;")),
   ),
-  
+  titlePanel("International Olympic Committee Relative Energy Deficiency in Sport Clinical Assessment Tool - version 2 Calculator"),
+  tags$div(style="font-size:10px; margin-top:-10px; margin-bottom:15px;",
+           HTML("Mountjoy M, Ackerman K, Bailey D, Burke L, Constantini N, Hackney A, Heikura I, Melin A, Pensgaard AM, Stellingwerff T, Sundgot-Borgen J, Torstveit M, Uhrenholdt Jacobsen A, Verhagen E, Budgett R, Engebretsen L, Erdener U.  The 2023 International Olympic Committee’s (IOC) consensus statement on Relative Energy Deficiency in Sports (REDs). Br J Sports Med. 2023;57:1073-1097. <a href='https://bjsm.bmj.com/content/57/17/1073' target='_blank'>https://bjsm.bmj.com/content/57/17/1073</a><br>
+           Mountjoy M, Ackerman K, Bailey D, Burke L, Constantini N, Hackney A, Heikura I, Melin A, Pensgaard AM, Stellingwerff T, Sundgot-Borgen J, Torstveit M, Uhrenholdt Jacobsen A, Verhagen E, Budgett R, Engebretsen L, Erdener U.  International Olympic Committee relative energy deficiency in sport clinical assessment tool 2 (IOC REDs CAT2) British Journal of Sports Medicine 2023;57:1068-1072. <a href='https://bjsm.bmj.com/content/57/17/1068' target='_blank'>https://bjsm.bmj.com/content/57/17/1068</a>")
+  ),
   fluidRow(
     column(3,
            div(class="card",
@@ -154,9 +155,9 @@ ui <- fluidPage(
     ),
     column(4,
            div(class="card",
-               htmlOutput("detail"),
+               # htmlOutput("detail"),
                # div(class="muted", "Primary 1 counts as 2 points."),
-               tags$div(style="border-bottom:1px solid #e5e5e5; margin:6px 0;"),
+               # tags$div(style="border-bottom:1px solid #e5e5e5; margin:6px 0;"),
                div(class="muted", "Language translation is supported through browser-based tools such as Chrome’s built-in Google Translate.")
            )
     )
@@ -169,12 +170,11 @@ ui <- fluidPage(
   ),
   fluidRow(
     tags$div(class="card",
-    style = "font-size:10px; margin-top:-15px; margin-bottom:15px; padding-left:16px; padding-right:16px;",
+             style = "font-size:10px; margin-top:-15px; margin-bottom:15px; padding-left:16px; padding-right:16px;",
              HTML("Every indicator below requires consideration of a non-LEA-mediated differential diagnosis. All indicators apply to females and males unless indicated. Menstrual cycle status and endogenous sex hormone levels cannot be accurately assessed in athletes who are taking sex hormone-altering medications (eg, hormone-based contraceptives), and thyroid hormone status indicators cannot be accurately assessed in athletes who are taking thyroid medications. All laboratory values should be interpreted in the context of age-and sex-appropriate and laboratory-specific reference ranges. Most REDs data and associated thresholds have been established in pre-menopausal/ andropausal adults unless indicated.<br>
              Disclaimer:  This tool should not be used in isolation nor solely for diagnosis, as every indicator requires clinical consideration of a non-LEA- mediated differential diagnosis. Furthermore, the tool is less reliable in situations where it is impossible to assess all indicators (eg, menstrual cycle status in females who are using hormonal contraception). This tool is not a substitute for professional clinical diagnosis, advice and/or treatment from a physician-led team of REDs health and performance experts.<br>
              *BMD assessed via DXA within ≤6 months. In some situations, using a Z-score from another skeletal site may be warranted [eg, distal 1/3 radius when other sites cannot be measured or including proximal femoral measurements in some older (>15 years) adolescents for whom longitudinal BMD monitoring into adulthood is indicated].  A true BMD decrease (from prior testing) is ideally assessed in comparison to the individual facilities DXA’s Least Significant Change (LSC) based on the facilities calculated coefficient of variation (%CV). As established by ISCD, at the very least, LSC should be 5.3%, 5.0% and 6.9% for the lumbar spine, hip and femoral neck to detect a clinical change.<br>
-             †Potential indicators are purposefully vague in quantification, pending further research to quantify parameters and cut-offs more accurately.<br>
-                  Adolescent, <18 years of age; BMD, bone mineral density; BMI, Body Mass Index; BP, blood pressure; BSI, bone stress injuries; DSM-5-TR, Diagnostic and Statistical Manual of Mental Disorders, 5th edition, text revision; DXA, dual-energy X-ray absorptiometry; EDE-Q, Eating Disorder Examination Questionnaire; FFM, fat-free mass; FHA, functional hypothalamic amenorrhea; GI, gastrointestinal; HR, heart rate; IGF-1, insulin-like growth factor 1; kcal, kilocalories; LDL, low-density lipoprotein; RMR, resting metabolic rate; T3, triiodothyronine; T, testosterone; TBLH, total body less head.")
+                  Adolescent, <18 years of age; BMD, bone mineral density; BMI, Body Mass Index; BP, blood pressure; BSI, bone stress injuries; DSM-5-TR, Diagnostic and Statistical Manual of Mental Disorders, 5th edition, text revision; DXA, dual-energy X-ray absorptiometry; EDE-Q, Eating Disorder Examination Questionnaire; FFM, fat-free mass; FHA, functional hypothalamic amenorrhea; LDL, low-density lipoprotein; T3, triiodothyronine; T, testosterone; TBLH, total body less head.")
     )
   ),
   fluidRow(
@@ -186,12 +186,15 @@ ui <- fluidPage(
     tags$div(
       style = "font-size:10px; margin-top:-15px; margin-bottom:15px; 
            padding-left:16px; padding-right:16px;",
-      HTML("This calculator developed by:<br>
+      HTML("Calculator based on: Stellingwerff, T., M. Mountjoy, W. T. McCluskey, K. E. Ackerman, E. Verhagen and I. A. Heikura (2023). \"Review of the scientific rationale, development and validation of the International Olympic Committee Relative Energy Deficiency in Sport Clinical Assessment Tool: V.2 (IOC REDs CAT2) — by a subgroup of the IOC consensus on REDs.\" <i>Br J Sports Med</i> 57(17): 1109–1118.<br>
+<a href='https://bjsm.bmj.com/content/57/17/1109' target='_blank'>https://bjsm.bmj.com/content/57/17/1109</a>"),
+      tags$div(style="border-bottom:1px solid #e5e5e5; margin:6px 0;"),
+      HTML("Calculator developed by:<br>
        Canadian Sport Institute Pacific (CSI Pacific)<br>
        Lead, Biomechanics & Performance Analysis; Senior Specialist, Data Analytics<br>
-       Dr. Ming-Chang Tsai (mtsai@csipacific.ca)<br><br>
-       Dr. Ida Heikura, CSI Pacific post-doctorate fellow (IHeikura@csipacific.ca)<br><br>
-       Dr. Trent Stellingwerff, Sr. Advisor R&D (tstellingwerff@csipacific.ca)<br><br>
+       Dr. Ming-Chang Tsai<br><br>
+       Dr. Ida Heikura, CSI Pacific post-doctorate fellow<br><br>
+       Dr. Trent Stellingwerff, Sr. Advisor R&D<br><br>
        and reviewed by all co-authors.")
     )  
   )
