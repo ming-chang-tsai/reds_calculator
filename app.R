@@ -139,7 +139,7 @@ ui <- fluidPage(
   titlePanel("International Olympic Committee Relative Energy Deficiency in Sport Clinical Assessment Tool - version 2 Calculator"),
   tags$div(style="font-size:10px; margin-top:-10px; margin-bottom:15px;",
            HTML("Mountjoy M, Ackerman K, Bailey D, Burke L, Constantini N, Hackney A, Heikura I, Melin A, Pensgaard AM, Stellingwerff T, Sundgot-Borgen J, Torstveit M, Uhrenholdt Jacobsen A, Verhagen E, Budgett R, Engebretsen L, Erdener U.  The 2023 International Olympic Committee’s (IOC) consensus statement on Relative Energy Deficiency in Sports (REDs). Br J Sports Med. 2023;57:1073-1097. <a href='https://bjsm.bmj.com/content/57/17/1073' target='_blank'>https://bjsm.bmj.com/content/57/17/1073</a><br>
-           Mountjoy M, Ackerman K, Bailey D, Burke L, Constantini N, Hackney A, Heikura I, Melin A, Pensgaard AM, Stellingwerff T, Sundgot-Borgen J, Torstveit M, Uhrenholdt Jacobsen A, Verhagen E, Budgett R, Engebretsen L, Erdener U.  International Olympic Committee relative energy deficiency in sport clinical assessment tool 2 (IOC REDs CAT2) British Journal of Sports Medicine 2023;57:1068-1072. <a href='https://bjsm.bmj.com/content/57/17/1068' target='_blank'>https://bjsm.bmj.com/content/57/17/1068</a>")
+           International Olympic Committee relative energy deficiency in sport clinical assessment tool 2 (IOC REDs CAT2) British Journal of Sports Medicine 2023;57:1068-1072. <a href='https://bjsm.bmj.com/content/57/17/1068' target='_blank'>https://bjsm.bmj.com/content/57/17/1068</a>")
   ),
   fluidRow(
     column(3,
@@ -186,8 +186,7 @@ ui <- fluidPage(
     tags$div(
       style = "font-size:10px; margin-top:-15px; margin-bottom:15px; 
            padding-left:16px; padding-right:16px;",
-      HTML("Calculator based on: Stellingwerff, T., M. Mountjoy, W. T. McCluskey, K. E. Ackerman, E. Verhagen and I. A. Heikura (2023). \"Review of the scientific rationale, development and validation of the International Olympic Committee Relative Energy Deficiency in Sport Clinical Assessment Tool: V.2 (IOC REDs CAT2) — by a subgroup of the IOC consensus on REDs.\" <i>Br J Sports Med</i> 57(17): 1109–1118.<br>
-<a href='https://bjsm.bmj.com/content/57/17/1109' target='_blank'>https://bjsm.bmj.com/content/57/17/1109</a>"),
+      HTML("Calculator based on: <br>Stellingwerff, T., M. Mountjoy, W. T. McCluskey, K. E. Ackerman, E. Verhagen and I. A. Heikura (2023). \"Review of the scientific rationale, development and validation of the International Olympic Committee Relative Energy Deficiency in Sport Clinical Assessment Tool: V.2 (IOC REDs CAT2) — by a subgroup of the IOC consensus on REDs.\" <i>Br J Sports Med</i> 57(17): 1109–1118. <a href='https://bjsm.bmj.com/content/57/17/1109' target='_blank'>https://bjsm.bmj.com/content/57/17/1109</a>"),
       tags$div(style="border-bottom:1px solid #e5e5e5; margin:6px 0;"),
       HTML("Calculator developed by:<br>
        Canadian Sport Institute Pacific (CSI Pacific)<br>
