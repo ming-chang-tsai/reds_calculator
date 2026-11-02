@@ -1,27 +1,28 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title>Redirecting to REDs calculator…</title>
-
-    <!-- Meta refresh redirect -->
-    <meta http-equiv="refresh"
-          content="0; url=https://ming-chang-tsai-reds-calculator.share.connect.posit.cloud/" />
-
-    <!-- JS redirect as a backup -->
-    <script>
-      window.location.href = "https://ming-chang-tsai-reds-calculator.share.connect.posit.cloud/";
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IOC REDs CAT2 Calculator</title>
+    <script
+      src="./shinylive/load-shinylive-sw.js"
+      type="module"
+    ></script>
+    <script type="module">
+      import { runExportedApp } from "./shinylive/shinylive.js";
+      runExportedApp({
+        id: "root",
+        appEngine: "r",
+        relPath: "",
+      });
     </script>
-
-    <!-- For SEO / canonical link hygiene (optional but nice) -->
-    <link rel="canonical" href="https://ming-chang-tsai-reds-calculator.share.connect.posit.cloud/">
+    <link rel="stylesheet" href="./shinylive/style-resets.css" />
+    <link rel="stylesheet" href="./shinylive/shinylive.css" />
+    
   </head>
-
   <body>
-    <p>
-      Redirecting to the REDs calculator…<br />
-      If you are not redirected automatically,
-      <a href="https://ming-chang-tsai-reds-calculator.share.connect.posit.cloud/">click here</a>.
-    </p>
+    
+    <div style="height: 100vh; width: 100vw" id="root"></div>
+    
   </body>
 </html>
